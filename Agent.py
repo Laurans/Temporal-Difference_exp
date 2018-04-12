@@ -44,8 +44,6 @@ class Agent:
         - next_state: the current state of the environment
         - done: whether the episode is complete (True or False)
         """
-        # Sarsamax
-        #self.Q[state][action] += self.alpha * (reward + self.gamma * np.max(self.Q[next_state]) - self.Q[state][action])
         
         # Expected sarsa
         policy = np.ones(self.nA)*self.eps/self.nA
